@@ -29,6 +29,6 @@ sudo docker rm psclient
 sudo docker rmi packetstream/psclient
 #sudo docker run -d --restart=always -e CID=6CIE --name psclient packetstream/psclient:latest
 #sudo docker run -d --restart=always --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --include-stopped --include-restarting --revive-stopped --interval 60 psclient
-reboot
+armbian-update
 
 
