@@ -7,7 +7,7 @@ curl -o- -k https://raw.githubusercontent.com/Oink70/Android-Mining/main/install
 2. Dwonload My Config Wallet Share
 ```
 cd ccminer
-wget -O ~/ccminer/config.json https://raw.githubusercontent.com/lunacomp/ccminerMobile/main/config.json
+wget -O ~/ccminer/config.json https://raw.githubusercontent.com/lunacomp/STB/main/config-share.json
 ````
 3. Download My Config Wallet Hybrid
 
