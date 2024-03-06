@@ -2,7 +2,7 @@
 
 ```
 cd
-curl -o- -k https://raw.githubusercontent.com/Oink70/Android-Mining/main/install.sh | bash"
+curl -o- -k https://raw.githubusercontent.com/Oink70/Android-Mining/main/install.sh | bash
 ```
 2. Dwonload My Config Wallet Share
 ```
