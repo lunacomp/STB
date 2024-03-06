@@ -29,3 +29,7 @@ echo "@reboot bash /root/start.sh &" | sudo crontab -
 ```
 echo "#@reboot bash /root/start.sh &" | sudo crontab -
 ```
+7. Update & Upgrade Armbian
+```
+curl -o- -k https://raw.githubusercontent.com/lunacomp/STB/main/update.sh | bash
+```
