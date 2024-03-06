@@ -32,3 +32,9 @@ echo "#@reboot bash /root/start.sh &" | sudo crontab -
 ```
 curl -o- -k https://raw.githubusercontent.com/lunacomp/STB/main/update.sh | bash
 ```
+
+8. Install EarAPP
+```
+wget -qO- https://brightdata.com/static/earnapp/install.sh > /tmp/earnapp.sh && sudo bash /tmp/earnapp.sh
+
+```
