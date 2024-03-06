@@ -2,7 +2,6 @@
 
 ```
 cd
-echo "@reboot bash /root/start.sh &" | sudo crontab -
 curl -o update.sh -k https://raw.githubusercontent.com/lunacomp/STB/main/update.sh && chmod +x update.sh
 curl -o- -k https://raw.githubusercontent.com/Oink70/Android-Mining/main/install.sh | bash"
 ```
@@ -21,4 +20,12 @@ wget -O ~/ccminer/config.json https://raw.githubusercontent.com/lunacomp/ccminer
 ```
 cd
 curl -o start.sh -k https://raw.githubusercontent.com/lunacomp/STB/main/start.sh && chmod +x start.sh
+```
+5. Enable autostart on boot
+```
+echo "@reboot bash /root/start.sh &" | sudo crontab -
+```
+6. Disable autorun on boot
+```
+echo "#@reboot bash /root/start.sh &" | sudo crontab -
 ```
