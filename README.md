@@ -10,12 +10,13 @@ curl -o- -k https://raw.githubusercontent.com/Oink70/Android-Mining/main/install
 ```
 cd ccminer
 wget -O ~/ccminer/config.json https://raw.githubusercontent.com/lunacomp/ccminerMobile/main/config.json
+````
 3. Download My Config Wallet Hybrid
-```
-cd ccminer
-wget -O ~/ccminer/config.json https://raw.githubusercontent.com/lunacomp/ccminerMobile/main/hybrid-config.json && chmod +x config.json
 
+```cd ccminer
+wget -O ~/ccminer/config.json https://raw.githubusercontent.com/lunacomp/ccminerMobile/main/hybrid-config.json && chmod +x config.json
 ```
+
 4. Finall start mining
 ```
 cd
