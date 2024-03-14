@@ -17,10 +17,13 @@ check_internet_connection() {
 if check_internet_connection; then
     # Jika koneksi internet tersedia, jalankan perintah apt-get update dan apt-get upgrade
     echo "Memperbarui daftar paket..."
-sleep 3
+sleep 4
+ clear
     apt-get update
 
     echo "Meng-upgrade paket..."
+sleep 4
+ clear
     apt-get upgrade -y
      apt autoremove
      apt autoclean
