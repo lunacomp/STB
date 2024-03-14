@@ -31,5 +31,3 @@ else
     echo "Gagal memeriksa koneksi internet. Proses dihentikan."
 fi
 
-   
-apt autoclean
