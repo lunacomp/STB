@@ -2,7 +2,7 @@
 
 # Fungsi untuk memeriksa koneksi internet
 check_internet_connection() {
-    wget -q --spider http://example.com
+    wget -q --spider http://google.com
 
     if [ $? -eq 0 ]; then
         echo "Koneksi internet terdeteksi."
