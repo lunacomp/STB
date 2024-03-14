@@ -17,6 +17,7 @@ check_internet_connection() {
 if check_internet_connection; then
     # Jika koneksi internet tersedia, jalankan perintah apt-get update dan apt-get upgrade
     echo "Memperbarui daftar paket..."
+sleep 3
     apt-get update
 
     echo "Meng-upgrade paket..."
