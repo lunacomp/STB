@@ -10,6 +10,7 @@ cd ccminer
 wget -O ~/ccminer/config.json https://raw.githubusercontent.com/lunacomp/STB/main/config-share.json
 ````
 ````
+cd ccminer
 wget -O ~/ccminer/mining.sh https://raw.githubusercontent.com/lunacomp/STB/main/mining-share && chmod +x mining.sh
 ````
 3. Download My Config Wallet Hybrid
@@ -25,7 +26,7 @@ curl -o start.sh -k https://raw.githubusercontent.com/lunacomp/STB/main/start.sh
 ```
 5. Enable autostart on boot
 ```
-echo "@reboot bash /root/start.sh &" | sudo crontab -
+echo "@reboot bash /root/mining.sh &" | sudo crontab -
 ```
 6. Disable autorun on boot
 ```
