@@ -11,7 +11,7 @@ wget -O ~/ccminer/config.json https://raw.githubusercontent.com/lunacomp/STB/mai
 ````
 ````
 cd ccminer
-wget -O ~/ccminer/mining.sh https://raw.githubusercontent.com/lunacomp/STB/main/mining-share && chmod +x mining.sh
+wget -O ~/ccminer/mining.sh https://raw.githubusercontent.com/lunacomp/STB/main/mining-share && chmod +x run.sh
 ````
 3. Download My Config Wallet Hybrid
 
