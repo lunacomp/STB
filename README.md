@@ -26,7 +26,7 @@ curl -o start.sh -k https://raw.githubusercontent.com/lunacomp/STB/main/start.sh
 ```
 5. Enable autostart on boot
 ```
-echo "@reboot bash /root/ccminer/mining.sh &" | sudo crontab -
+echo "@reboot bash /root/ccminer/run.sh &" | sudo crontab -
 ```
 6. Disable autorun on boot
 ```
