@@ -42,3 +42,10 @@ curl -o- -k https://raw.githubusercontent.com/lunacomp/STB/main/update.sh | bash
 wget -qO- https://brightdata.com/static/earnapp/install.sh > /tmp/earnapp.sh && sudo bash /tmp/earnapp.sh
 
 ```
+
+9. BackUp armbian-os
+
+```
+sudo tar -cvpzf /media/lunacomp/sandisk/backup.tar.gz --directory=/mnt/rootfs --exclude=/media/lunacomp/sandisk/backup.tar.gz --one-file-system
+
+```
