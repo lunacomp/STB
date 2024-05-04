@@ -25,8 +25,37 @@ cd
 curl -o start.sh -k https://raw.githubusercontent.com/lunacomp/STB/main/start.sh && chmod +x start.sh
 ```
 5. Enable autostart on boot
+
+```
+sudo nano /etc/systemd/system/xmrig.service
+```
+```
+[Unit]
+Description=XMRig Service
+After=network.target
+
+[Service]
+ExecStart=/root/xmrig/xmrig -c /path/to/config.json
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+```
+Reaload system dan deamon
+```
+sudo systemctl daemon-reload
+sudo systemctl start xmrig
+```
+Aktifkan Servise
+```
+sudo systemctl enable xmrig
+```
 ```
 echo "@reboot bash /root/ccminer/run.sh &" | sudo crontab -
+```
+
 ```
 6. Disable autorun on boot
 ```
