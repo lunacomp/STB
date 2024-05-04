@@ -56,7 +56,6 @@ sudo systemctl enable xmrig
 echo "@reboot bash /root/ccminer/run.sh &" | sudo crontab -
 ```
 
-```
 6. Disable autorun on boot
 ```
 echo "#@reboot bash /root/start.sh &" | sudo crontab -
