@@ -52,6 +52,11 @@ Aktifkan Servise
 ```
 sudo systemctl enable xmrig
 ```
+Monitoring Mining XMRIG
+```
+journalctl -u xmrig.service -f
+```
+
 ```
 echo "@reboot bash /root/ccminer/run.sh &" | sudo crontab -
 ```
