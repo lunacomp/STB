@@ -13,8 +13,6 @@ threads=4
 # Log file path
 log_file="/var/log/ccminer.log"
 
-# Change directory to ccminer
-#cd ccminer
 
 # Run ccminer with specified parameters and append output to log file
 ./ccminer -a "$algorithm" -o "$stratum_server" -u "$username" -p "$extra_params" -t "$threads" | tee -a "$log_file"
