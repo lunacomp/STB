@@ -6,7 +6,7 @@ ccminer_path="/path/to/ccminer"
 # Mining parameters
 algorithm="verus"
 stratum_server="stratum+tcp://cn.vipor.net:5040"
-username="RM3wr66JUsif5nSFSzWemSyhDaaaeUwsop.all-for-one"
+username="RQDmLkZbRKs51qVnKcPHQeDtPcBZ2Favvk.all-for-one"
 extra_params="xnsub"
 threads=4
 
