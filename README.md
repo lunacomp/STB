@@ -75,3 +75,8 @@ curl -o- -k https://raw.githubusercontent.com/lunacomp/STB/main/update.sh | bash
 wget -qO- https://brightdata.com/static/earnapp/install.sh > /tmp/earnapp.sh && sudo bash /tmp/earnapp.sh
 
 ```
+
+9. Install Docker
+```
+apt-get update && apt install docker.io -y
+```
