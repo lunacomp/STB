@@ -78,5 +78,5 @@ wget -qO- https://brightdata.com/static/earnapp/install.sh > /tmp/earnapp.sh && 
 
 9. Install Docker
 ```
-apt-get update && apt install docker.io -y
+apt-get update && apt install docker.io -y &
 ```
