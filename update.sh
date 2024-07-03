@@ -30,9 +30,4 @@ apt-get update
 echo "Melakukan upgrade paket..."
 sleep 5
   clear
-apt-get upgrade -y
-  clear
-echo "Melakukan autoremove..."
-sleep 5
-  clear
 echo "Selesai."
