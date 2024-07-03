@@ -35,11 +35,4 @@ apt-get upgrade -y
 echo "Melakukan autoremove..."
 sleep 5
   clear
-apt autoremove -y
-  clear
-echo "Melakukan autoclean..."
-sleep 5
-  clear
-apt autoclean
-  clear
 echo "Selesai."
