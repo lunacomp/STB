@@ -1,8 +1,19 @@
 #!/bin/bash
 
-# Run the uninstall command for EarnApp
-echo "y" | sudo earnapp uninstall
-echo "y" | sudo earnapp uninstall --force
+# Uninstall EarnApp script with automatic 'y' responses
+
+# Function to simulate automatic 'y' input
+auto_yes() {
+  echo "y"
+  sleep 1
+}
+
+# Uninstall EarnApp
+{
+  auto_yes | ./path_to_earnapp_uninstaller
+} || {
+  echo "Failed to uninstall EarnApp."
+}
 
 echo "EarnApp has been uninstalled."
 
