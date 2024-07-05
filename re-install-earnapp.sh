@@ -1,22 +1,20 @@
 #!/bin/bash
 
-# Function to uninstall EarnApp
-uninstall_earnapp() {
-  # Print message
-  echo "Uninstalling EarnApp..."
+# Command to uninstall EarnApp
+echo "Are you sure you want to uninstall EarnApp? [y/N]"
+echo "y"
 
-  # Uninstall EarnApp and automatically confirm with 'y' twice
-  # This assumes the uninstallation process is initiated via a command like 'apt-get remove' or similar
-  # Replace 'apt-get remove earnapp' with the actual uninstallation command for EarnApp
-  echo -e "y\ny\n" | sudo apt-get remove earnapp
+# Automatically answering the second prompt
+echo "You may lose your earnings if you haven't added this device in the dashboard yet [y/N]"
+echo "y"
 
-  # Check if the uninstallation was successful
-  if [ $? -eq 0 ]; then
-    echo "EarnApp has been successfully uninstalled."
-  else
-    echo "Failed to uninstall EarnApp."
-  fi
-}
+# Actual uninstall command (replace with the actual uninstall command for EarnApp)
+earnapp uninstall <<EOF
+y
+y
+EOF
+
+echo "EarnApp has been uninstalled."
 
 # Call the function
 uninstall_earnapp
