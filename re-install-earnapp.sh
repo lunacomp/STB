@@ -1,23 +1,7 @@
 #!/bin/bash
 
-# Command to uninstall EarnApp
-echo "Are you sure you want to uninstall EarnApp? [y/N]"
-echo "y"
-
-# Automatically answering the second prompt
-echo "You may lose your earnings if you haven't added this device in the dashboard yet [y/N]"
-echo "y"
-
-# Actual uninstall command (replace with the actual uninstall command for EarnApp)
-earnapp uninstall <<EOF
-y
-y
-EOF
-
-echo "EarnApp has been uninstalled."
-
-# Call the function
-uninstall_earnapp
+# This will automatically answer 'y' to all prompts
+yes y | earnapp uninstall
 
 # Download and install EarnApp
 echo "Downloading and installing EarnApp..."
