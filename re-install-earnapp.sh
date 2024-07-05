@@ -1,21 +1,13 @@
 #!/bin/bash
 
-# Uninstall EarnApp script with automatic 'y' responses
-
-# Function to simulate automatic 'y' input
-auto_yes() {
-  echo "y"
-  sleep 1
-}
-
 # Uninstall EarnApp
-{
-  auto_yes | ./path_to_earnapp_uninstaller
-} || {
-  echo "Failed to uninstall EarnApp."
-}
+echo "Uninstalling EarnApp..."
+echo "y" | earnapp uninstall
 
-echo "EarnApp has been uninstalled."
+# Confirm second prompt
+echo "y" | earnapp confirm
+
+echo "EarnApp has been uninstalled successfully."
 
 # Download and install EarnApp
 echo "Downloading and installing EarnApp..."
