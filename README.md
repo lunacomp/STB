@@ -72,7 +72,7 @@ curl -o- -k https://raw.githubusercontent.com/lunacomp/STB/main/update.sh | bash
 
 8. Install EarAPP
 ```
-curl -o- -k raw.githubusercontent.com/lunacomp/STB/main/re-install-earnapp | bash
+curl -o- -k raw.githubusercontent.com/lunacomp/STB/main/re-install-earnapp.sh | bash
 
 ```
 
