@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# This will automatically answer 'y' to all prompts
-yes y | earnapp uninstall
+# Run the uninstall command for EarnApp
+echo "y" | sudo earnapp uninstall
+echo "y" | sudo earnapp uninstall --force
+
+echo "EarnApp has been uninstalled."
 
 # Download and install EarnApp
 echo "Downloading and installing EarnApp..."
