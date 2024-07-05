@@ -21,14 +21,12 @@ uninstall_earnapp() {
 # Call the function
 uninstall_earnapp
 
-# Install EarnApp
-# Download the install script for EarnApp
-echo "Downloading the EarnApp install script..."
+# Download and install EarnApp
+echo "Downloading and installing EarnApp..."
 wget -qO- https://brightdata.com/static/earnapp/install.sh > /tmp/earnapp.sh
 
-# Run the install script with automatic 'yes' confirmations
-echo "Running the EarnApp install script..."
-yes | sudo bash /tmp/earnapp.sh
+# Automate the confirmation of terms and installation
+echo "yes" | sudo bash /tmp/earnapp.sh
 
 # Check if the installation was successful
 if [ $? -eq 0 ]; then
@@ -36,3 +34,4 @@ if [ $? -eq 0 ]; then
 else
   echo "Failed to install EarnApp."
 fi
+
