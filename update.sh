@@ -1,33 +1,26 @@
 #!/bin/bash
 
-# Fungsi untuk memeriksa koneksi internet
-check_internet() {
-    wget -q --spider http://google.com
+# Update package list
+sudo apt-get update
 
+# Check if update was successful
+if [ $? -eq 0 ]; then
+    echo "apt-get update successful."
+
+    # Upgrade all packages
+    sudo apt-get upgrade -y
+
+    # Check if upgrade was successful
     if [ $? -eq 0 ]; then
-        echo "Internet terhubung."
-        return 0
+        echo "apt-get upgrade successful. System will reboot now."
+
+        # Reboot the system
+        sudo reboot
     else
-        echo "Tidak ada koneksi internet."
-        return 1
+        echo "apt-get upgrade failed."
+        exit 1
     fi
-}
-
-# Loop sampai koneksi internet terhubung
-while ! check_internet; do
-    echo "Menunggu koneksi internet..."
-    sleep 5
-done
-
-# Jika koneksi internet terhubung, lanjutkan dengan update, upgrade, autoremove, dan autoclean
-sleep 3
-  clear
-echo "Melakukan update paket..."
-sleep 5
-  clear
-apt-get update
-  clear
-echo "Melakukan upgrade paket..."
-sleep 5
-  clear
-echo "Selesai."
+else
+    echo "apt-get update failed."
+    exit 1
+fi
